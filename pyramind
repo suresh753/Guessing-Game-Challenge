@@ -1,0 +1,18 @@
+
+rows = int(input('Enter a number of rows to create a pyramid : '))
+data = 1
+spaces = rows-1
+for row in range(rows):
+
+    for space in range(spaces):
+        print(" ",end="")
+    spaces-=1
+
+    value = 0
+
+    while row>=value:
+        print(f'{data} ',end="")
+        data+=1
+        value+=1
+
+    print('\n')
